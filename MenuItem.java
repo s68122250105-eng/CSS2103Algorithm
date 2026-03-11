@@ -1,3 +1,4 @@
+
 public class MenuItem {
 
     //2 กำหนด private instance + public static variable
@@ -7,17 +8,10 @@ public class MenuItem {
     private String description;
     private String picture;
 
-
-
-
     //1 สร้าง Constructor ของทุก class อย่างน้อย 2 Constructors
     public MenuItem(int menuId) {
         this.menuId = menuId;
-    }
-
-    public MenuItem(int menuId, String name) {
-        this.menuId = menuId;
-        this.name = name;
+        this.name = "ไม่มีชื่อเมนู";
     }
 
     public MenuItem(int menuId, String name, double price) {
@@ -40,9 +34,6 @@ public class MenuItem {
         this.description = description;
         this.picture = picture;
     }
-
-
-
 
     //3 สร้าง method get/set ของทุกๆ attributes
     public int getMenuId() {

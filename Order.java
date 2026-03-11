@@ -8,10 +8,10 @@ public class Order {
     public int orderCount = 0;
 
     public Order() {
-        this.orderDate = new Date();
-        this.status = "Pending";
-        this.totalPrice = 0.0f;
-        orderCount++;
+    this.orderDate = new Date();
+    this.status = "PENDING";
+    this.totalPrice = 0.0f;
+    orderCount++;
     }
 
     public Order(String status, Float totalPrice) {
@@ -48,16 +48,4 @@ public class Order {
     public void setTotalPrice(Float totalPrice) {
         this.totalPrice = totalPrice;
     }
-
-    public void calcTotal() {
-        System.out.println("From class Order = calcTotal");
-    }
-
-    public void updateStatus() {
-        System.out.println("From class Order = updateStatus");
-    }
-
-    public void assignRider() {
-        System.out.println("From class Order = assignRider");
-    }
-} 
+}

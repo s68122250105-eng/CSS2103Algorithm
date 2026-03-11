@@ -2,7 +2,7 @@
 public class Payment {
 
     // 2) private instance variables (อย่างน้อย 5 ตัว)
-    private int paymentId;
+    public int paymentId;
     private double amount;
     private String method;          // Cash, Credit, PromptPay
     private String status;          // PAID, PENDING, FAILED

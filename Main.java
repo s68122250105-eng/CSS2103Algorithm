@@ -1,23 +1,14 @@
+
 public class Main {
+
     public static void main(String[] args) {
-
-        RescueRobot robot = new RescueRobot("RR-01");
-
-        robot.updatePosition(13.75, 100.50);
-
-        robot.takeOff();
-        System.out.println(robot.status());
-        robot.land();
-
-        robot.startEngine();
-        System.out.println("Max speed: " + robot.maxSpeed());
-        robot.stopEngine();
-
-        robot.readTemperatureC();
-        robot.detectHuman(36.5);
-
-        robot.send("Found hotspot...");
-
-        System.out.println("Battery left: " + robot.batteryLevel() + "%");
+        Customer m1 = new Customer();
+        MenuItem m2 = new MenuItem(1);
+        Restaurant m3 = new Restaurant();
+        Order m4 = new Order();
+        OrderItem m5 = new OrderItem(null);
+        Payment m6 = new Payment(1001);
+        DeliveryRider d7 = new DeliveryRider(01);
+        System.out.println("d1");
     }
 }

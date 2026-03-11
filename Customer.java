@@ -14,7 +14,7 @@ public class Customer {
     public String username;
     public String password;
     public LocalDateTime registerDate;
-    public Status status;
+    public String status;
 
     public int totalOrders;
     public double totalSpent;
@@ -35,7 +35,7 @@ public class Customer {
     
     public Customer(int customerId, String name, String phone, String email, LocalDate birthDate, String address, String subAddress,
                     String username, String password, LocalDateTime registerDate,
-                    Status status, int totalOrders, double totalSpent, String note,
+                    String status, int totalOrders, double totalSpent, String note,
                     String paymentMethod){
         this.customerId = customerId;
         this.name = name;
@@ -116,10 +116,10 @@ public class Customer {
     public LocalDateTime getRegisterDate() {
         return registerDate;
     }
-    public void setStatus(Status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
     public void setTotalOrders(int totalOrders) {

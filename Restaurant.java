@@ -3,7 +3,7 @@ import java.time.LocalTime;
 public class Restaurant {
 
 
-    private int restaurantId;
+    public int restaurantId;
     private String name;
     private String address;
     private String phone;
