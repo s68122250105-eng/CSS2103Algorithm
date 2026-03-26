@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="262.0" style="-fx-background-color: #171717;" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="473.0" prefWidth="402.0" style="-fx-background-color: #171717;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="470.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../../Downloads/download%20(4).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="528.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../../Downloads/download%20(5).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-1.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/download%20(5).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="16.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../../../Downloads/download%20(4).png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="sortbutton" layoutX="400.0" layoutY="20.0" prefWidth="150.0" promptText="การเรียงลำดับ" />
+            <Button fx:id="searchdutton" layoutX="278.0" layoutY="20.0" mnemonicParsing="false" text="ค้นหา" />
+            <Button fx:id="rebutton" layoutX="344.0" layoutY="20.0" mnemonicParsing="false" text="รีเฟรช" />
+            <TableView layoutX="41.0" layoutY="61.0" prefHeight="277.0" prefWidth="510.0">
+               <columns>
+                  <TableColumn fx:id="nametxet" prefWidth="102.40002822875977" text="ชื่อ" />
+                  <TableColumn fx:id="authortext" prefWidth="96.79998779296875" text="ผู้แต่ง" />
+                  <TableColumn fx:id="publishertext" prefWidth="101.59996032714844" text="สำนักพิมพ์" />
+                  <TableColumn fx:id="yeartext" prefWidth="54.39996337890625" text="ปี" />
+                  <TableColumn fx:id="reeiewtext" prefWidth="104.79998779296875" text="รีวิว" />
+                  <TableColumn fx:id="scoretext" prefWidth="49.5999755859375" text="คะแนน" />
+               </columns>
+            </TableView>
+            <TextField fx:id="searchtxt" layoutX="41.0" layoutY="19.0" prefHeight="26.0" prefWidth="238.0" promptText="ค้นหา" />
+            <Button fx:id="addbutton" layoutX="41.0" layoutY="349.0" mnemonicParsing="false" text="เพิ่มหนังสือ" />
+            <ImageView fitHeight="50.0" fitWidth="84.0" layoutX="123.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/download%20(6).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="100.0" layoutY="22.0" prefHeight="338.0" prefWidth="476.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="ชื่อ" />
+                <TableColumn prefWidth="75.0" text="ผู้แต่ง" />
+                  <TableColumn prefWidth="75.0" text="สำนักพิมพ์" />
+                  <TableColumn prefWidth="75.0" text="ปี" />
+                  <TableColumn prefWidth="75.0" text="รีวิว" />
+                  <TableColumn prefWidth="75.0" text="คะแนน" />
+              </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="167.0" prefHeight="47.0" prefWidth="85.0" text="พบหนังสือ" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
